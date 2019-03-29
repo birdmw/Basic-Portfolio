@@ -1,3 +1,52 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 body {
 	width: 100wh;
 	height: 90vh;
@@ -46,26 +95,17 @@ body {
 	}
 }
 
-h1,
-h6 {
-	font-family: 'Open Sans';
-	font-weight: 300;
-	text-align: center;
-	top: 15%;
-	right: 0;
-	left: 0;
-}
-
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  float: left;
+  width: 25%;
 }
-    
+
 .start
 {
-    color: red;
+    color: black;
     left-margin: auto;
     right-margin: auto;
     text-align: justify;
@@ -82,4 +122,143 @@ h6 {
     -moz-text-align-last: center;
     text-align-last: center;
     font-size: large;
+}
+
+#header
+{
+	position: relative;
+	background-color: white;
+	height: 50px;
+
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+}
+
+#my_name
+{
+	font-weight: bold;
+	background-color: rgb(4, 180, 224);
+	display: inline;
+	margin-left:10px;
+	margin-top:10px;
+	padding-left:5px;
+	padding-right:5px;
+	/* height: 80%; */
+	line-height: 40px;
+	float: left;
+	}
+
+
+.top_link
+{
+    font-weight: bold;
+	position: relative;
+	width: 10%;
+	height: 100%;
+	float: right;
+    vertical-align: middle;
+    margin-top:10px;
+    line-height: 40px;
+
+}
+
+.my_face {
+  position: relative;
+  margin:20px;
+  display: block;
+  float: left;
+  width: 200px;
+}
+
+.my_thumbs {
+	height: 200px;
+	width: 300px;
+  }
+
+.main_brick{
+    position: relative;
+    background:white;
+    margin-left:50px;
+    margin-top:50px;
+    margin-right:50px;
+    height:auto;
+}
+
+.description{
+	position: relative;
+    color:black;
+    padding-left:50px;
+	padding-top:20px;
+}
+#footer_teal {
+    clear: both;
+    background-color: cyan;
+    position: relative;
+    height: 5px;
+    margin-top: 50px;
+}
+#footer {
+    clear: both;
+    background-color: gray;
+    position: relative;
+    height: 40px;
+    margin-top: 0px;
+}
+
+#copycat {
+    border-top: 50;
+    font-size: x-small;
+    padding-top:25px;
+    text-align: center;
+}
+
+#aboutme {
+	font-family:Helvetica;
+	font-size:x-large;
+	color:teal;	
+	padding-left:25px;
+    padding-top:20px;
+}
+
+.line {
+	clear: both;
+	position:relative;
+	padding-left:20px;
+	padding-right:20px;
+	color: teal;
+	/* border-left: 20px;
+	border-width: 10px;
+	margin: 20px;
+	width: 80%; */
+
+}
+
+.entry-width{
+
+	width: 90%
+}
+
+.entry-height2{
+	height: 150px;
+}
+
+.thumb_box{
+	position: relative;
+	text-align: center;
+	color: white;
+	float: left;
+	height: auto;
+}
+
+.bottom_center{
+	position: absolute;
+	/* left: 25%; */
+	width: 250px;
+	bottom: 8px;
+	left: 20px;
+	padding: 8px;
+	background-color: teal;
+
 }
